@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Margin</title>
+    <style type="text/css">
+        .container {
+            border: 1px solid #000;
+            width: 80%;
+            min-height: 600px;
+            background-color: rgb(250, 222, 212);
+            margin: auto;
+        }
+        .margin {
+            margin: 10px 10px 10px 10px;
+            height: 600px;
+            border: 1px solid #000;
+        }
+
+        #content
+        { 
+            display: grid; 
+        grid-template-columns: repeat(10, 1fr); 
+        grid-template-rows: repeat(9, 1fr); 
+        grid-gap: 10px; 
+        max-width: 1000px;
+        max-height: 600px;
+
+        } 
+        #content div{  
+           padding: 30px; 
+        } 
+        
+        
+        .kotak1 { 
+        grid-column-start: 1; 
+        grid-column-end: 4; 
+        }
+        .kotak2 { 
+        grid-column: 4 / 11; 
+        }
+
+        .kotak3 { 
+        grid-column: 1 / 5; 
+        grid-row: 2 / 7; 
+        } 
+        
+        .kotak4 { 
+        grid-column: 5 / 11;  
+        } 
+        .kotak5 { 
+        grid-column: 5 / 11;  
+        } 
+        .kotak6 { 
+        grid-column: 5 / 8;  
+        } 
+        .kotak7 { 
+        grid-column: 8 / 11;  
+        } 
+        .kotak8 { 
+        grid-column: 5 / 8;  
+        grid-row: 5 / 8
+        } 
+        .kotak9 { 
+        grid-column: 8 / 10;  
+        grid-row: 5 / 8
+        } 
+        .kotak10 { 
+        grid-column: 10 / 11;  
+        grid-row: 5 / 8
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="margin">
+                <div id="content"> 
+                        <div class="kotak1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt recusandae, eaque nemo iusto porro rerum corporis totam unde quasi.</div> 
+                        <div class="kotak2" style="font-size: 60px;">DESIGNING</div> 
+                        <div class="kotak3"><a href="https://placeholder.com"><img src="http://via.placeholder.com/350x400"></a></div> 
+                        <div class="kotak4" style="font-size: 30px">LAYOUT</div> 
+                        <div class="kotak5" style="font-size: 30px">LIKE A PRO</div> 
+                        <div class="kotak6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div> 
+                        <div class="kotak7">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div> 
+                        <div class="kotak8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div> 
+                        <div class="kotak9"><a href="https://placeholder.com"><img src="http://via.placeholder.com/140x70"></a></div> 
+                        <div class="kotak10">Lorem ipsum dolor sit amet .</div> 
+                     </div> 
+        </div>
+    </div>
+</body>
+</html>
